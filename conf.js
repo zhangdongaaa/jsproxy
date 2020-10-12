@@ -16,8 +16,8 @@ jsproxy_config({
       label: '演示服务-香港节点',
       lines: {
         // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
+        'http://172.16.180.221.xip.io:8080': 1,
+        'http://172.16.180.221.xip.io:8080': 2,
       }
     },
     'demo-sg': {
@@ -29,7 +29,7 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        [location.host]: 1,
+        'http://172.16.180.221.xip.io:8080': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
